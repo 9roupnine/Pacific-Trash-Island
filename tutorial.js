@@ -26,6 +26,15 @@ function draw() {
     noStroke();
     fill(0,27,45,255);
     rect(0,0,width,height);
+    
+    push();
+    translate(width/2, height/2);
+    rotate(frameCount/3);
+    noFill();
+    strokeWeight(5);
+    stroke(255);
+    arc(0, 0, 50, 50, 0, 90);
+    pop();
 
     // push();
     // translate(width/2, height/2);
