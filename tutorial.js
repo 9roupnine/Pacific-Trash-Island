@@ -1,11 +1,8 @@
-
 var letters=[];
 var keyP = 0;
 var sec=3;
 var sfum=255;
 var loading=true;
-
-
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
@@ -77,7 +74,7 @@ function info() {
       var h = 50
 
       fill(this.c1)
-    text('P', this.x,this.y1-h);
+      text('P', this.x,this.y1-h);
 
       fill(this.c2)
       text('R', this.x+s,this.y2-h);
@@ -149,68 +146,68 @@ function info() {
   }
 
 this.delete=function(){
-    if (key == 'p'){
+    if (key == 'p' || key == 'P'){
       if(this.c1!=='#001b2d') {
         keyP++;
       }
         this.c1=('#001b2d');
     }
 
-    if (key == 'r'){
+    if (key == 'r' || key == 'R'){
       if(this.c2!=='#001b2d') {
         keyP++;
       }
     this.c2=('#001b2d');
     }
-    if (key == 'e'){
+    if (key == 'e' || key == 'E'){
       if(this.c3!=='#001b2d') {
         keyP++;
       }
       this.c3=('#001b2d');
     }
-    if (key == 's'){
+    if (key == 's' || key == 'S'){
       if(this.c4!=='#001b2d') {
         keyP++;
       }
       this.c4=('#001b2d');
     }
-    if (key == 'l'){
+    if (key == 'l' || key == 'L'){
       if(this.c5!=='#001b2d') {
         keyP++;
       }
       this.c5=('#001b2d');
     }
-    if (key == 't'){
+    if (key == 't' || key == 'T'){
       if(this.c6!=='#001b2d') {
         keyP++;
       }
       this.c6=('#001b2d');
     }
-    if (key == 'k'){
+    if (key == 'k' || key == 'K'){
       if(this.c7!=='#001b2d') {
         keyP++;
       }
       this.c7=('#001b2d');
     }
-    if (key == 'y'){
+    if (key == 'y' || key == 'Y'){
       if(this.c8!=='#001b2d') {
         keyP++;
       }
       this.c8=('#001b2d');
     }
-    if (key == 'o'){
+    if (key == 'o' || key == 'O'){
       if(this.c9!=='#001b2d') {
         keyP++;
       }
       this.c9=('#001b2d');
     }
-    if (key == 'a'){
+    if (key == 'a' || key == 'A'){
       if(this.c10!=='#001b2d') {
         keyP++;
       }
       this.c10=('#001b2d');
     }
-    if (key == 'h'){
+    if (key == 'h' || key == 'H'){
       if(this.c11!=='#001b2d') {
         keyP++;
       }
