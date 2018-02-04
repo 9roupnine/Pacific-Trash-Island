@@ -2,12 +2,12 @@ var frameTime = 0;
 var clockTime = 0;
 var sfum=0;
 var clockSwitch = 1;
-var sec = 10;
+var sec = 60;
 var mMove = 0;
 var sfumEnd = 0;
 var sfumEnd2 = 0;
 var button=false;
-var colC = '255,255,255';
+var colC = 'ffffff';
     colBC = 0;
 
 function clock() {
@@ -88,10 +88,13 @@ function showTextEnd() {
     text('Hai salvato '+score*5.5+' m² di plastica dai mari', 0,+180);
 
     textSize(20);
-    fill(colC);
+    if (colC=='ffffff') {
+      fill(255,255,255,sfumEnd);
+    }
+    else if (colC=='#001b2d') {
+      fill(colC);
+    }
     text('CONTINUE', 0,288);
-
-
     pop();
 
     push();
@@ -126,7 +129,7 @@ function changeCol() {
     colBC = 255;
   }
   else {
-    colC = '255,255,255';
+    colC = 'ffffff';
     colBC = 0;
   }
 }

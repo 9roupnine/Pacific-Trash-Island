@@ -1,13 +1,14 @@
 var c;
 var arrImg=[];
 
-function preload() {
+function loadImg() {
     for(i = 0; i <= 34; i++) {
       var f = loadImage('assets/lett/lett'+i+'.png');
       arrImg.push(f);
     }
 
     flagSco=loadImage('assets/flag_score.png');
+    loading=false;
 }
 
 function getRandomSize() {

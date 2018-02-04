@@ -148,6 +148,9 @@ function keyTyped() {
        particlesBoh.splice(0,numBoh);
        score += numBoh;
     }
+    if (key == ' '){
+      clockTime=sec*30;
+    }
   }
 }
 
