@@ -6,9 +6,7 @@ function loadImg() {
       var f = loadImage('assets/lett/lett'+i+'.png');
       arrImg.push(f);
     }
-
     flagSco=loadImage('assets/flag_score.png');
-    aniload=loadImage('assets/aniload.gif');
     loading=false;
 }
 

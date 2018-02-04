@@ -2,6 +2,11 @@ var mySec=1;
 var mySfum=255;
 var textSfum = 255;
 var loading= true;
+var aniload;
+
+function preload() {
+  aniload=loadImage('assets/aniload.png');
+}
 
 function setup() {
 

@@ -14,8 +14,11 @@ var colP = '255,255,255',
     colBP = 0,
     colBR = 0;
 var loading=true;
+var aniload;
 
-
+function preload() {
+  aniload=loadImage('assets/aniload.png');
+}
 
 function loadImg () {
   imgLM=loadImage('assets/mont/hm.png');

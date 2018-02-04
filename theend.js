@@ -11,6 +11,11 @@ var Gtimer=0;
 var string = 'Durante il tempo che hai giocato sono stati gettati nel mare 10,000 m² di plastica. (Impegnati come hai fatto nel gioco per migliorare la situazione!)';
 var loading=true;
 var button=false;
+var aniload;
+
+function preload() {
+  aniload=loadImage('assets/aniload.png');
+}
 
 function loadImg() {
   imgLM=loadImage('assets/mont/lm.png');
@@ -45,6 +50,14 @@ function draw() {
   if (loading){
     fill(0,27,45,255);
     rect(0,0,width,height);
+
+    push();
+    translate(width/2, height/2);
+    scale(0.5);
+    rotate(frameCount/3);
+    imageMode(CENTER);
+    image(aniload,0,0);
+    pop();
   }
   else {
     background(0,27,45,255);
