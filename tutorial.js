@@ -3,6 +3,12 @@ var letters=[];
 var keyP = 0;
 var sec=3;
 var sfum=255;
+var loading=true;
+var aniload;
+
+function preload() {
+  aniload = loadImage("assets/aniload.png");
+}
 
 function setup() {
 
@@ -10,10 +16,27 @@ function setup() {
   background(0);
   frameRate(30);
 
-    letters = new info();
+  letters = new info();
+
+  loading=false;
 }
 
 function draw() {
+  if (loading){
+    fill(0,27,45,255);
+    rect(0,0,width,height);
+
+    push();
+    translate(width/2, height/2);
+    scale(0.5);
+    rotate(frameCount/3);
+    imageMode(CENTER);
+    image(aniload,0,0);
+    pop();
+  }
+  else {
+
+
     push();
     translate(width/3,height/2);
     background('#001b2d');
@@ -27,10 +50,14 @@ function draw() {
       rect(0,0,width,height);
       sfum-=(255/(sec*30))
     // fine SFUMATURA
+  }
 }
 
 function keyTyped() {
- letters.delete();
+  if (key == ' ') {
+    keyP==11;
+  }
+  letters.delete();
 }
 
 function info (){

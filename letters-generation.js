@@ -8,6 +8,7 @@ function loadImg() {
     }
 
     flagSco=loadImage('assets/flag_score.png');
+    aniload=loadImage('assets/aniload.gif');
     loading=false;
 }
 
