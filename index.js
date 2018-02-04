@@ -155,7 +155,7 @@ function draw() {
         textAlign(CENTER);
         textSize(25);
         text('In the 2050 there will be more bottle than fish.', width/2,height/2+110);
-        text('Bettere clean up the ocean!', width/2,height/2+150);
+        text('Better clean up the ocean!', width/2,height/2+150);
 
         textSize(20);
         fill(colR);
