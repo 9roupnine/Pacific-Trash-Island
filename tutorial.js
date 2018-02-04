@@ -23,6 +23,8 @@ function setup() {
 
 function draw() {
   if (loading){
+    background('#001b2d');
+    
     noStroke();
     fill(0,27,45,255);
     rect(0,0,width,height);
