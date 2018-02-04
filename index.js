@@ -14,11 +14,11 @@ var colP = '255,255,255',
     colBP = 0,
     colBR = 0;
 var loading=true;
-var aniload;
-
-function preload() {
-  aniload=loadImage('assets/aniload.png');
-}
+// var aniload;
+//
+// function preload() {
+//   aniload=loadImage('assets/aniload.png');
+// }
 
 function loadImg () {
   imgLM=loadImage('assets/mont/hm.png');
@@ -40,16 +40,17 @@ function setup() {
 
 function draw() {
   if (loading){
+    noStroke();
     fill(0,27,45,255);
     rect(0,0,width,height);
 
-    push();
-    translate(width/2, height/2);
-    scale(0.5);
-    rotate(frameCount/3);
-    imageMode(CENTER);
-    image(aniload,0,0);
-    pop();
+    // push();
+    // translate(width/2, height/2);
+    // scale(0.5);
+    // rotate(frameCount/3);
+    // imageMode(CENTER);
+    // image(aniload,0,0);
+    // pop();
   }
   else {
     background(0,27,45,255);
