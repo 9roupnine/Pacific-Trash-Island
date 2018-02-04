@@ -38,7 +38,6 @@ function loadImg() {
   onda1=loadImage('assets/onda1_1.png', loaded);
   onda2=loadImage('assets/onda2_2.png', loaded);
   back=loadImage('assets/back.png', loaded);
-  loading=false;
 }
 
 function setup() {
