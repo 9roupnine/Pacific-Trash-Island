@@ -50,14 +50,16 @@ function setup() {
 }
 
 function draw() {
+  background(0,27,45,255);
+
   if (loading){
-    noStroke();
-    fill(0,27,45,255);
-    rect(0,0,width,height);
+    // noStroke();
+    // fill(0,27,45,255);
+    // rect(0,0,width,height);
 
     push();
     translate(width/2, height/2);
-    rotate(frameCount/3);
+    rotate(frameCount*20);
     noFill();
     strokeWeight(5);
     stroke(255);
@@ -65,8 +67,6 @@ function draw() {
     pop();
   }
   else {
-    background(0,27,45,255);
-
     Gtimer++
 
     push();
@@ -125,22 +125,22 @@ function draw() {
             pop();
           }
 
-          push(); // INIZIO - bandiera
-          translate(width/2-51,height/2-85);
-          rotate(20);
-          scale(-0.2, 0.2);
-          image(flag, 0, 0);
-          pop(); // FINE - bandiera
-
-          // TESTI DIMENSIONE
-          push();
-          translate(width/2-51,height/2-100);
-          rotate(15);
-          fill(255);
-          textAlign(CENTER);
-          textSize(40);
-          text('60"', 0, 0);
-          pop();
+          // push(); // INIZIO - bandiera
+          // translate(width/2-51,height/2-85);
+          // rotate(20);
+          // scale(-0.2, 0.2);
+          // image(flag, 0, 0);
+          // pop(); // FINE - bandiera
+          //
+          // // TESTI DIMENSIONE
+          // push();
+          // translate(width/2-51,height/2-100);
+          // rotate(15);
+          // fill(255);
+          // textAlign(CENTER);
+          // textSize(40);
+          // text('60"', 0, 0);
+          // pop();
 
 
           push(); // INIZIO - logo
@@ -257,8 +257,8 @@ function draw() {
           textAlign(CENTER);
           textSize(25);
 
-          text('Scroll to find the entire dimension', width/2,height-70-diff);
-          // text('10,000 m²', width/2,height-70);
+          text('Scroll to find the entire dimension', width/2,+70-diff);
+          text('10,000 m²', width/2,height-70);
           text("It's bigger than Hong Kong", width/2+600+1000+20,+70-diff);
           text('1,000 km²', width/2+600+1000,height-70-diff);
           text("It's bigger than Luxemburg", width/2+600+2500+20,+70-diff);
@@ -279,11 +279,11 @@ function draw() {
           text('700,000 km²', width/2+700000,height-70-diff);
 
           push();
-          fill(255);
+          fill(255,255,255,50);
           textAlign(CENTER);
           textSize(20);
 
-          text(string,width/2-200,+40-diff, 400, 200);
+          text(string,width/2-200,height/2-130, 400, 200);
           pop();
 
         pop(); // fine - TESTI DIMENSIONI

@@ -16,14 +16,16 @@ function setup() {
 }
 
 function draw() {
+  background('#001b2d');
+
   if (loading){
-    noStroke();
-    fill(0,27,45,255);
-    rect(0,0,width,height);
+    // noStroke();
+    // fill(0,27,45,255);
+    // rect(0,0,width,height);
 
     push();
     translate(width/2, height/2);
-    rotate(frameCount/3);
+    rotate(frameCount*10);
     noFill();
     strokeWeight(5);
     stroke(255);
@@ -33,7 +35,6 @@ function draw() {
   else {
     push();
     translate(width/3,height/2);
-    background('#001b2d');
     letters.display();
     letters.move();
     changeWindow();

@@ -1,7 +1,7 @@
 var c;
 var arrImg=[];
 var cLoaded = 0,
-    tLoaded = 36;
+    tLoaded = 35+1;
 
 function loaded() {
   cLoaded++;
