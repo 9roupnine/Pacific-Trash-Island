@@ -12,7 +12,7 @@ var string = 'Durante il tempo che hai giocato sono stati gettati nel mare 10,00
 var loading=true;
 var button=false;
 var cLoaded = 0,
-    tLoaded = 15;
+    tLoaded = 16;
 
 function loaded() {
   cLoaded++;
