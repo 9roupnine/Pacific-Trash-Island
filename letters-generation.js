@@ -1,13 +1,21 @@
 var c;
 var arrImg=[];
+var cLoaded = 0,
+    tLoaded = 35+1;
+
+function loaded() {
+  cLoaded++;
+  if(cLoaded==tLoaded) {
+    loading=false;
+  }
+}
 
 function loadImg() {
     for(i = 0; i <= 34; i++) {
-      var f = loadImage('assets/lett/lett'+i+'.png');
+      var f = loadImage('assets/lett/lett'+i+'.png', loaded);
       arrImg.push(f);
     }
-    flagSco=loadImage('assets/flag_score.png');
-    loading=false;
+    flagSco=loadImage('assets/flag_score.png', loaded);
 }
 
 function getRandomSize() {

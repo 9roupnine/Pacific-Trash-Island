@@ -5,15 +5,14 @@ var sec=3;
 var sfum=255;
 var loading=true;
 
-function setup() {
 
+
+function setup() {
   createCanvas(windowWidth,windowHeight);
   background(0);
   frameRate(30);
 
   letters = new info();
-
-  loading=false;
 }
 
 function draw() {
@@ -32,9 +31,6 @@ function draw() {
     pop();
   }
   else {
-
-
-
     push();
     translate(width/3,height/2);
     background('#001b2d');
@@ -58,7 +54,7 @@ function keyTyped() {
   letters.delete();
 }
 
-function info (){
+function info() {
 
     this.x=0;
     this.y1=this.y2=this.y3=this.y4=0;
@@ -220,6 +216,7 @@ this.delete=function(){
       this.c11=('#001b2d');
     }
   }
+  loading=false;
 }
 
 function changeWindow() {

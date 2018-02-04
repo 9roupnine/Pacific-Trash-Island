@@ -11,24 +11,33 @@ var Gtimer=0;
 var string = 'Durante il tempo che hai giocato sono stati gettati nel mare 10,000 m² di plastica. (Impegnati come hai fatto nel gioco per migliorare la situazione!)';
 var loading=true;
 var button=false;
+var cLoaded = 0,
+    tLoaded = 15;
+
+function loaded() {
+  cLoaded++;
+  if(cLoaded==tLoaded) {
+    loading=false;
+  }
+}
 
 function loadImg() {
-  imgLM=loadImage('assets/mont/lm.png');
-  imgBM2=loadImage('assets/mont/bm2.png');
-  imgBM1=loadImage('assets/mont/bm1.png');
-  logo=loadImage('assets/logo.png');
-  flag=loadImage('assets/flag.png');
-  hk=loadImage('assets/flags/flag_hk.png');
-  lux=loadImage('assets/flags/flag_lux.png');
-  gia=loadImage('assets/flags/flag_gia.png');
-  bel=loadImage('assets/flags/flag_bel.png');
-  irl=loadImage('assets/flags/flag_irl.png');
-  uru=loadImage('assets/flags/flag_uru.png');
-  ita=loadImage('assets/flags/flag_ita.png');
-  spa=loadImage('assets/flags/flag_spa.png');
-  onda1=loadImage('assets/onda1_1.png');
-  onda2=loadImage('assets/onda2_2.png');
-  back=loadImage('assets/back.png');
+  imgLM=loadImage('assets/mont/lm.png', loaded);
+  imgBM2=loadImage('assets/mont/bm2.png', loaded);
+  imgBM1=loadImage('assets/mont/bm1.png', loaded);
+  logo=loadImage('assets/logo.png', loaded);
+  flag=loadImage('assets/flag.png', loaded);
+  hk=loadImage('assets/flags/flag_hk.png', loaded);
+  lux=loadImage('assets/flags/flag_lux.png', loaded);
+  gia=loadImage('assets/flags/flag_gia.png', loaded);
+  bel=loadImage('assets/flags/flag_bel.png', loaded);
+  irl=loadImage('assets/flags/flag_irl.png', loaded);
+  uru=loadImage('assets/flags/flag_uru.png', loaded);
+  ita=loadImage('assets/flags/flag_ita.png', loaded);
+  spa=loadImage('assets/flags/flag_spa.png', loaded);
+  onda1=loadImage('assets/onda1_1.png', loaded);
+  onda2=loadImage('assets/onda2_2.png', loaded);
+  back=loadImage('assets/back.png', loaded);
   loading=false;
 }
 

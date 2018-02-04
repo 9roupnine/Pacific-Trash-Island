@@ -14,19 +14,22 @@ var colP = '255,255,255',
     colBP = 0,
     colBR = 0;
 var loading=true;
-// var aniload;
-//
-// function preload() {
-//   aniload=loadImage('assets/aniload.png');
-// }
+var cLoaded = 0,
+    tLoaded = 5;
+
+function loaded() {
+  cLoaded++;
+  if(cLoaded==tLoaded) {
+    loading=false;
+  }
+}
 
 function loadImg () {
-  imgLM=loadImage('assets/mont/hm.png');
-  logo=loadImage('assets/logo.png');
-  flag=loadImage('assets/flag.png');
-  onda1=loadImage('assets/onda1_1.png');
-  onda2=loadImage('assets/onda2_2.png');
-  loading=false;
+  imgLM=loadImage('assets/mont/hm.png', loaded);
+  logo=loadImage('assets/logo.png', loaded);
+  flag=loadImage('assets/flag.png', loaded);
+  onda1=loadImage('assets/onda1_1.png', loaded);
+  onda2=loadImage('assets/onda2_2.png', loaded);
 }
 
 function setup() {
@@ -39,14 +42,15 @@ function setup() {
 }
 
 function draw() {
-  if (loading){
-    noStroke();
-    fill(0,27,45,255);
-    rect(0,0,width,height);
+  background(0,27,45,255);
 
+  if (loading){
+    // noStroke();
+    // fill(0,27,45,255);
+    // rect(0,0,width,height);
     push();
     translate(width/2, height/2);
-    rotate(frameCount/3);
+    rotate(frameCount*20);
     noFill();
     strokeWeight(5);
     stroke(255);
@@ -54,8 +58,6 @@ function draw() {
     pop();
   }
   else {
-    background(0,27,45,255);
-
     Gtimer++
 
     changeCol();
