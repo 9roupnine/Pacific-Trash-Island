@@ -6,7 +6,8 @@ The interaction is based on the position of the mouse that keep generating lette
 
 After one minute of interaction it showed to the user the percentage of plastic cleaned compared to the generated in one minute. Scrolling the mouse it showed the plastic generated with the mouse compared to the entire size of the plastic island.
 
-![alt text]()
+![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/mood1.png)
+![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/mood2.png)
 
 ## Ideas / Moodboard
 
