@@ -148,19 +148,11 @@ function keyTyped() {
        particlesBoh.splice(0,numBoh);
        score += numBoh;
     }
-    if (key == ' '){
-      clockTime=sec*30;
-    }
+    // CHEAT
+    // if (key == ' '){
+    //   clockTime=sec*30;
+    // }
   }
-}
-
-function scoreBar() {
-  fill(255, 255, 255, 100);
-  // rect(width-350, 85, 300, 25);
-  rect(width/2-150, height-100, 300, 50);
-  fill(255);
-  // rect(width-350, 85, score*(600/1800), 25);
-  rect(width/2-150, height-100, score*(600/1800), 50);
 }
 
 function showTextScore() {

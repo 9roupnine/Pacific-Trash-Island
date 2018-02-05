@@ -54,7 +54,7 @@ function draw() {
     textAlign(CENTER);
     textSize(35);
     text('Move your mouse', width/2,height/2-25);
-    text('and erase the trash', width/2,height/2+25);
+    text('and erase trash', width/2,height/2+25);
     if(frameTime>=((mySec+1)*30) && mMove!==0) {
       textSfum-=(255/30);
     }

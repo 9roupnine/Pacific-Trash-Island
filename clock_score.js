@@ -42,7 +42,7 @@ function clock() {
 
 
 function showTextEnd() {
-  //SFUMATURA
+  // inizio SFUMATURA
   if(clockTime>=sec*30) {
     fill(0,27,45,sfum);
     rect(0,0,width,height);
@@ -51,19 +51,12 @@ function showTextEnd() {
   // fine SFUMATURA
 
   if(clockTime>=(sec*30)+60) {
-    // fill(255);
-    // textAlign(CENTER);
-    // textSize(60);
-    // text('Time is over!', width/2,height/2);
 
     changeCol();
 
     push();
     translate(width/2, height/2-50);
-    // noFill();
-    // stroke(255,255,255,sfumEnd);
-    // strokeWeight(8);
-    // ellipse(0,0, 200, 200);
+
       push();
       fill(255,255,255,colBC);
       stroke(255,255,255,sfumEnd);
@@ -77,7 +70,7 @@ function showTextEnd() {
     // inserire if
     textSize(40);
     if (round((score/tot)*100)>= 25) {
-      text('Well done!', 0,-150);
+      text('Good job!', 0,-150);
     }
     if (round((score/tot)*100)<= 25) {
       text('You could have done more...', 0,-150);
@@ -85,7 +78,7 @@ function showTextEnd() {
     textSize(70);
     text(round((score/tot)*100)+'%', 0, +25);
     textSize(25);
-    text('You cleaned up '+score*5.5+' m² of plastic in the sea', 0,+180);
+    text('You cleaned up '+round((score/tot)*10000)+' m² of plastic in the sea', 0,+180);
 
     textSize(20);
     if (colC=='ffffff') {
@@ -99,7 +92,7 @@ function showTextEnd() {
 
     push();
     translate(width/2-148,height/2-137);
-    tint(255,sfumEnd)
+    tint(255,sfumEnd);
     rotate(-8);
     scale(0.35);
     image(flagSco, 0, 0);
@@ -111,9 +104,7 @@ function showTextEnd() {
     fill(0,27,45,sfumEnd2);
     rect(0,0,width,height);
     sfumEnd2+=(255/20);
-    // fill('red');
-    // textSize(60);
-    // text('GAME OVER', width/2, height/2);
+
     if(sfumEnd2>=300) {
       window.location.href="theend.html";
     }
