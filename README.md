@@ -21,14 +21,18 @@ After one minute of interaction it showed to the user the percentage of plastic 
 
 Afterwards, it is showed the plastic generated from the mouse compared to the entire size of the plastic island.
 
-![alt text](https://sailuniverse.com/wp-content/uploads/2016/03/pacific_trash_vortex_info-1.png)
+We took inspiration from the following refereces:
+* [letter world by nishiwaki akiho](https://www.openprocessing.org/sketch/79781)
+* [Wandering Title by Michael Stathopoulos](https://www.openprocessing.org/sketch/104881)
+* [floating illuminates by aadebded](https://www.openprocessing.org/sketch/381214)
+* [Radio Garden](http://radio.garden/live/)
+
+
 
 
 
 
 ## Ideas / Moodboard
-
-- Plastic / fish ratio (it is estimated that in 2050 there will be more plastic in the sea than fish)
 
 - a sort of mixer, in which it is possible to adjust the recycling levels and see how the ocean conditions change in a time scale.
 
