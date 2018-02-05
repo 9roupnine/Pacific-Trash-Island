@@ -1,0 +1,108 @@
+body {
+    background-color:#001b2d !important;
+    height:100vh;
+    overflow-x: hidden;
+
+}
+
+.btn1 {
+    width:200px;
+    height:50px;
+    background-color:transparent;
+    border: 2px solid #fff;
+    border-radius:30px;
+    color:#fff;
+}
+
+.btn1:hover {
+    width:200px;
+    height:50px;
+    background-color:#fff;
+    border: 2px solid #fff;
+    border-radius:30px;
+    color:#000;
+}
+
+#canvas {
+    width:100%;
+    height:100%;
+    background-color:#000;
+    display:none;
+    position:absolute;
+    top:100vh;
+    left:0;
+}
+
+.blocked {
+    overflow:hidden;
+    height:100%;
+}
+
+.island {
+    position:absolute;
+    top:10px;
+    left:30%;
+    animation-duration: 3s;
+  animation-name: float;
+  animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes float {
+  from {
+   top:-20px;
+  }
+
+  to {
+   top:10px
+  }
+}
+
+/* WAVE ANIMATION */
+
+/* Waves */
+
+
+.ocean { 
+  width:100%;
+  position:absolute;
+  bottom:400;
+  left:0;
+  background: #015871;
+}
+
+.wave {
+  background: url(assets/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 700px;
+  animation: wave 20s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+
+
