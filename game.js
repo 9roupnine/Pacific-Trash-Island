@@ -20,10 +20,6 @@ function draw() {
   background('#001b2d');
 
   if (loading){
-    // noStroke();
-    // fill(0,27,45,255);
-    // rect(0,0,width,height);
-
     push();
     translate(width/2, height/2);
     rotate(frameCount*10);
@@ -41,14 +37,10 @@ function draw() {
       pushLett();
       }
     showParticles();
-    // end - SHOW PARTICLES
     }
-
     // showTextScore();
     clock();
-    // scoreBar();
     showTextEnd();
-    // end - SCORE
 
     fill(255,255,255,textSfum);
     textAlign(CENTER);
@@ -58,11 +50,11 @@ function draw() {
     if(frameTime>=((mySec+1)*30) && mMove!==0) {
       textSfum-=(255/30);
     }
-    //SFUMATURA
+    //INIZIO - sfumatura
       fill(0,27,45,mySfum);
       rect(0,0,width,height);
       mySfum-=(255/(mySec*30));
-    // fine SFUMATURA
+    // FINE -  sfumatura
   }
 }
 

@@ -27,8 +27,7 @@ function keyTyped() {
        particlesF.splice(0,numF);
        score +=  numF;
     }
-
-  if (key == 'g' || key == 'G'){
+    if (key == 'g' || key == 'G'){
        particlesG.splice(0,numG);
        score += numG;
     }
@@ -52,8 +51,7 @@ function keyTyped() {
        particlesL.splice(0,numL);
        score +=  numL;
     }
-
-      if (key == 'm' || key == 'M'){
+    if (key == 'm' || key == 'M'){
        particlesM.splice(0,numM);
        score += numM;
     }
@@ -102,8 +100,7 @@ function keyTyped() {
        particlesX.splice(0,numX);
        score +=  numX;
     }
-
-      if (key == 'y' || key == 'Y'){
+    if (key == 'y' || key == 'Y'){
        particlesY.splice(0,numY);
        score += numY;
     }
@@ -127,8 +124,7 @@ function keyTyped() {
        particlesEcomm.splice(0,numEcomm);
        score +=  numEcomm;
     }
-
-      if (key == "'" || key == "?"){
+    if (key == "'" || key == "?"){
        particlesInt.splice(0,numInt);
        score += numInt;
     }
@@ -155,13 +151,13 @@ function keyTyped() {
   }
 }
 
-function showTextScore() {
-  noStroke();
-  fill('red');
-  textSize(30);
-  text('tot: ' + tot, 100,100);
-  fill('green');
-  text('score: ' + score, width-200,100);
-  fill('yellow');
-  text('perc: ' + round((score/tot)*100) + '%', width/2,height-100);
-}
+// function showTextScore() {
+//   noStroke();
+//   fill('red');
+//   textSize(30);
+//   text('tot: ' + tot, 100,100);
+//   fill('green');
+//   text('score: ' + score, width-200,100);
+//   fill('yellow');
+//   text('perc: ' + round((score/tot)*100) + '%', width/2,height-100);
+// }

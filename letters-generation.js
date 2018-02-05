@@ -41,9 +41,8 @@ class Particle {
   }
 
   update() {
-      this.x += this.vx*(this.size*2);
-      this.y += this.vy*(this.size*2);
-//
+    this.x += this.vx*(this.size*2);
+    this.y += this.vy*(this.size*2);
 
     if ((this.x > width)||(this.x < 0)) {
       this.vx *= -1;
@@ -55,19 +54,6 @@ class Particle {
   }
 
   show() {
-    // noStroke();
-    // fill(255);
-    // textSize(this.size);
-    // textFont('Vollkorn');
-    // textAlign(CENTER);
-    //
-    // push();
-    // translate(this.x,this.y);
-    // rotate(this.z);
-    // text(this.letter, 0,0);
-    // pop();
-
-
     push();
     imageMode(CENTER);
     translate(this.x,this.y);
@@ -76,7 +62,6 @@ class Particle {
     image(this.img,0,0);
     pop();
   }
-
 }
 
 function pushLett() {
@@ -367,5 +352,4 @@ function showParticles() {
     particlesBoh[i].show();
     particlesBoh[i].update();
   }
-
 }

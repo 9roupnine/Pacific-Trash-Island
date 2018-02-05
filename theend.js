@@ -1,5 +1,4 @@
 var pos = 0;
-var imgLM, imgBM1, imgBM2, onda1, onda2;
 var n1=0;
 var c1=0;
 var y=0;
@@ -9,7 +8,7 @@ var spost=0,
     diff=20;
 var Gtimer=0;
 var string = 'During the time you played 10,000 m² of plastic has been thrown into the sea',
-    string2 = 'Do your best as you did in the game to improve the situation in our world'
+    string2 = 'Do your best as you did in the game to improve the situation in our world';
 var loading=true;
 var button=false,
     buttonWorld=false;
@@ -56,10 +55,6 @@ function draw() {
   background(0,27,45,255);
 
   if (loading){
-    // noStroke();
-    // fill(0,27,45,255);
-    // rect(0,0,width,height);
-
     push();
     translate(width/2, height/2);
     rotate(frameCount*20);
@@ -77,7 +72,7 @@ function draw() {
       fill(0,27,45,255);
       rect(0, height, width, 7000);
 
-      push(); // inizio onda1
+      push(); // INIZIO - onda1
       translate(n1, 0);
       scale(1);
       image(onda1, width/2, height/2+530);
@@ -93,33 +88,34 @@ function draw() {
       } else if(c1==1){
         n1-=2
       }
-      pop(); // fine onda1
+      pop(); // FINE - onda1
 
-      push(); // inizio scroll
+      push(); // INIZIONE - SCROLL
         if (pos<=0) {
         translate(pos, 0);
         }
         else {}
         push();// INIZIO - isole galleggianti
         translate(0, y);
-          push();
+          push();// INIZIO - little mount
           translate(width/2-5,height/2+75);
           scale(0.3);
           image(imgLM, 0, 0);
-          pop();
+          pop();// FINE - little mount
 
-          push();
+          push();// INIZIO - big mount 1
           translate(width/2+615,height/2+50);
           scale(0.25);
           image(imgBM1, 0, 0);
-          pop();
+          pop();// FINE - big mount 1
 
-          push();
+          push(); // INIZIO - big mount 2
           translate(width/2+615+300,height/2+50);
           scale(0.25);
           image(imgBM2, 0, 0);
-          pop();
+          pop();// INIZIO - big mount 2
 
+          // INIZIO CICLO - big mount 2
           for (i=1; i<=1456; i++) {
             push();
             translate(width/2+915+(i*480),height/2+50);
@@ -127,6 +123,7 @@ function draw() {
             image(imgBM2, 0, 0);
             pop();
           }
+          // FINE CICLO - big mount 2
 
           push(); // INIZIO - logo
           translate(width/2+560,height/2-100);
@@ -211,9 +208,9 @@ function draw() {
         }
         pop(); // FINE - isole galleggianti
 
-      pop(); // fine scroll
+      pop(); // FINONA - SCROLL
 
-        push(); // inizio onda2
+        push(); // INIZIO - onda2
         translate(-n1, 0);
         scale(1);
         image(onda2, width/2, height/2+530);
@@ -229,9 +226,9 @@ function draw() {
         } else if(c1==1){
           n1-=2
         }
-        pop(); // fine onda2
+        pop(); // FINE - onda2
 
-        push(); // inizio - TESTI DIMENSIONI
+        push(); // INIZIO - testi
           if (pos<=0) {
           translate(pos, 0);
           }
@@ -270,26 +267,24 @@ function draw() {
           text(string2,width/2-200+700000,30, 400, 200);
           pop();
 
-        pop(); // fine - TESTI DIMENSIONI
+        pop(); // FINE - testi
 
-        push(); // INIZIO - back
+        push(); // INIZIO - back button
         translate(80,50);
         scale(0.25);
         image(back, 0, 0);
-        pop(); // FINE - back
+        pop(); // FINE - back button
 
-        push(); // INIZIO - world
+        push(); // INIZIO - world button
         translate(width-80,50);
         scale(0.25);
         image(world, 0, 0);
-        pop(); // FINE - world
+        pop(); // FINE - world button
 
-    if(spost<=height+diff)
-    {
+    if(spost<=height+diff){
       spost+=20;
     }
   }
-
   changeWindow();
 }
 

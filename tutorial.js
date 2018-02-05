@@ -16,10 +16,6 @@ function draw() {
   background('#001b2d');
 
   if (loading){
-    // noStroke();
-    // fill(0,27,45,255);
-    // rect(0,0,width,height);
-
     push();
     translate(width/2, height/2);
     rotate(frameCount*10);
@@ -37,33 +33,27 @@ function draw() {
     changeWindow();
     pop();
 
-    //SFUMATURA
+    // INIZIO - sfumatura
       fill(0,27,45,sfum);
       rect(0,0,width,height);
       sfum-=(255/(sec*30))
-    // fine SFUMATURA
+    // FINE - sfumatura
   }
 }
 
 function keyTyped() {
-  if (key == ' ') {
-    keyP==11;
-  }
   letters.delete();
 }
 
 function info() {
+  this.x=0;
+  this.y1=this.y2=this.y3=this.y4=0;
+  this.vy1=random(-0.1,0.1);
+  this.vy2=random(-0.2,0.1);
+  this.vy3=random(-0.1,0.2);
+  this.vy4=random(-0.2,0.2);
+  this.c1 = this.c2 = this.c3 =  this.c4 = this.c5 = this.c6 =  this.c7 = this.c8 = this.c9 = this.c10 = this.c11 = 255;
 
-    this.x=0;
-    this.y1=this.y2=this.y3=this.y4=0;
-    this.vy1=random(-0.1,0.1);
-    this.vy2=random(-0.2,0.1);
-    this.vy3=random(-0.1,0.2);
-    this.vy4=random(-0.2,0.2);
-    this.c1 = this.c2 = this.c3 =  this.c4 = this.c5 = this.c6 =  this.c7 = this.c8 = this.c9 = this.c10 = this.c11 = 255;
-//
-//    }
-//
   this.display=function(){
   noStroke();
     textSize(50);
@@ -124,6 +114,7 @@ function info() {
       text('H', this.x+s*14,this.y3+h);
  }
 
+  // galleggiamento
   this.move=function(){
        this.y1 += this.vy1;
       this.y2 += this.vy2;
@@ -133,19 +124,19 @@ function info() {
     if ((this.y1 > 8)||(this.y1 < -8)) {
       this.vy1 *= -1;
     }
-       if ((this.y2 > 5)||(this.y2 < -5)) {
+    if ((this.y2 > 5)||(this.y2 < -5)) {
       this.vy2 *= -1;
     }
-       if ((this.y3 > 8)||(this.y3 < -8)) {
+    if ((this.y3 > 8)||(this.y3 < -8)) {
       this.vy3 *= -1;
     }
-       if ((this.y4 > 10)||(this.y4 < -10)) {
+    if ((this.y4 > 10)||(this.y4 < -10)) {
       this.vy4 *= -1;
     }
-
   }
 
-this.delete=function(){
+// cancella letters
+  this.delete=function(){
     if (key == 'p' || key == 'P'){
       if(this.c1!=='#001b2d') {
         keyP++;

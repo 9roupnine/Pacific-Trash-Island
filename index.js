@@ -45,9 +45,6 @@ function draw() {
   background(0,27,45,255);
 
   if (loading){
-    // noStroke();
-    // fill(0,27,45,255);
-    // rect(0,0,width,height);
     push();
     translate(width/2, height/2);
     rotate(frameCount*20);
@@ -60,14 +57,12 @@ function draw() {
   else {
     Gtimer++
 
-    changeCol();
-
     push();
     translate(0, -spost);
       fill(0,27,45,255);
       rect(0, height, width, 7000);
 
-      push(); // INIZIO onda1
+      push(); // INIZIO - onda1
       translate(n1, 0);
       scale(1);
       image(onda1, width/2, height/2+450);
@@ -83,38 +78,38 @@ function draw() {
       } else if(c1==1){
         n1-=2
       }
-      pop(); // FINE onda1
+      pop(); // FINE - onda1
 
-        push();// INIZIO - isole galleggianti
-        translate(0, y);
-          push();
-          translate(width/2,height/2-50);
-          scale(0.25);
-          image(imgLM, 0, 0);
-          pop();
+      push();// INIZIO - isole galleggianti
+      translate(0, y);
+        push();
+        translate(width/2,height/2-50);
+        scale(0.25);
+        image(imgLM, 0, 0);
+        pop();
 
-          push();
-          translate(width/2+10,height/2-220);
-          rotate(-20);
-          scale(0.2);
-          image(logo, 0, 0);
-          pop();
+        push();
+        translate(width/2+10,height/2-220);
+        rotate(-20);
+        scale(0.2);
+        image(logo, 0, 0);
+        pop();
 
-        if(y<-8) {
-          cy=0;
-        } else if(y>+8) {
-          cy=1;
-        }
+      if(y<-8) {
+        cy=0;
+      } else if(y>+8) {
+        cy=1;
+      }
 
-        if(cy==0){
-          y+=0.5
-        } else if(cy==1){
-          y-=0.5
-        }
-        pop(); // FINE - isole galleggianti
+      if(cy==0){
+        y+=0.5
+      } else if(cy==1){
+        y-=0.5
+      }
+      pop(); // FINE - isole galleggianti
 
 
-        push(); // INIZIO onda2
+      push(); // INIZIO - onda2
         translate(-n1, 0);
         scale(1);
         image(onda2, width/2, height/2+450);
@@ -130,18 +125,20 @@ function draw() {
         } else if(c1==1){
           n1-=2
         }
-        pop(); // FINE onda2
+      pop(); // FINE - onda2
 
-        push();
+      changeCol();// cambia colore buttons
+
+      push(); // INIZIO - buttons
         stroke(255);
         strokeWeight(2);
         fill(255,255,255,colBR);
         rect(width/2-200, height/2+210, 175, 60, 30, 30, 30, 30);
         fill(255,255,255,colBP);
         rect(width/2+25, height/2+210, 175, 60, 30, 30, 30, 30);
-        pop();
+      pop(); // FINE - buttons
 
-        push();
+      push();// INIZIO - testi
         noStroke();
         fill(255);
         textAlign(CENTER);
@@ -154,7 +151,7 @@ function draw() {
         text('READ MORE', width/2-112,height/2+247);
         fill(colP);
         text('PLAY', width/2+112,height/2+247);
-        pop();
+      pop();// FINE - testi
 
     if(spost<=height && buttonP==true) {
       spost+=20;

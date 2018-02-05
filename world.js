@@ -61,17 +61,17 @@ function draw() {
     image(logo, 0, 0);
     pop(); // FINE - logo
 
-    push(); // INIZIO - back
+    push(); // INIZIO - back button
     translate(80,50+25);
     scale(0.25);
     image(back, 0, 0);
-    pop(); // FINE - back
+    pop(); // FINE - back button
 
-    push(); // INIZIO - world
+    push(); // INIZIO - island button
     translate(width-80,50+25);
     scale(0.25);
     image(island, 0, 0);
-    pop(); // FINE - world
+    pop(); // FINE - island button
 
     changeWindow();
 
@@ -107,13 +107,6 @@ function deZoom() {
     image(world, 0,0);
     pop();
   }
-
-  // push();
-  // translate(width/2,height/2);
-  // scale(0.5+zoom2);
-  // fill(0,27,45,255);
-  // rect(0,0,width*2.5,height*2.5);
-  // pop();
 
   push();
   translate(width/2,height/2);
