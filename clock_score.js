@@ -69,10 +69,10 @@ function showTextEnd() {
     fill(255,255,255,sfumEnd);
     // inserire if
     textSize(40);
-    if (round((score/tot)*100)>= 25) {
+    if (round((score/tot)*100)>= 50) {
       text('Good job!', 0,-150);
     }
-    if (round((score/tot)*100)<= 25) {
+    if (round((score/tot)*100)< 50) {
       text('You could have done more...', 0,-150);
     }
     textSize(70);
