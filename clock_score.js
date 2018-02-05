@@ -80,12 +80,12 @@ function showTextEnd() {
       text('Bel lavoro!', 0,-150);
     }
     if (round((score/tot)*100)<= 25) {
-      text('Potevi fare meglio...', 0,-150);
+      text('You could have done more...', 0,-150);
     }
     textSize(70);
     text(round((score/tot)*100)+'%', 0, +25);
     textSize(25);
-    text('Hai salvato '+score*5.5+' m² di plastica dai mari', 0,+180);
+    text('You cleaned up '+score*5.5+' m² of plastic in the sea', 0,+180);
 
     textSize(20);
     if (colC=='ffffff') {
