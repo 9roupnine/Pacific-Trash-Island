@@ -149,9 +149,9 @@ function keyTyped() {
        score += numBoh;
     }
     // CHEAT
-    //if (key == ' '){
-    //  clockTime=sec*30;
-    //}
+    // if (key == ' '){
+    //   clockTime=sec*30;
+    // }
   }
 }
 

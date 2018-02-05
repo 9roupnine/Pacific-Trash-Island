@@ -8,11 +8,13 @@ var tra=-1;
 var spost=0,
     diff=20;
 var Gtimer=0;
-var string = 'During the time you played 10,000 m² of plastic has been throwning into the sea.(Do your best as you did in the game to improve the situation!)';
+var string = 'During the time you played 10,000 m² of plastic has been thrown into the sea',
+    string2 = 'Do your best as you did in the game to improve the situation in our world'
 var loading=true;
-var button=false;
+var button=false,
+    buttonWorld=false;
 var cLoaded = 0,
-    tLoaded = 16;
+    tLoaded = 17;
 
 function loaded() {
   cLoaded++;
@@ -38,6 +40,7 @@ function loadImg() {
   onda1=loadImage('assets/onda1_1.png', loaded);
   onda2=loadImage('assets/onda2_2.png', loaded);
   back=loadImage('assets/back.png', loaded);
+  world=loadImage('assets/world.png', loaded);
 }
 
 function setup() {
@@ -124,24 +127,6 @@ function draw() {
             image(imgBM2, 0, 0);
             pop();
           }
-
-          // push(); // INIZIO - bandiera
-          // translate(width/2-51,height/2-85);
-          // rotate(20);
-          // scale(-0.2, 0.2);
-          // image(flag, 0, 0);
-          // pop(); // FINE - bandiera
-          //
-          // // TESTI DIMENSIONE
-          // push();
-          // translate(width/2-51,height/2-100);
-          // rotate(15);
-          // fill(255);
-          // textAlign(CENTER);
-          // textSize(40);
-          // text('60"', 0, 0);
-          // pop();
-
 
           push(); // INIZIO - logo
           translate(width/2+560,height/2-100);
@@ -257,13 +242,12 @@ function draw() {
           textAlign(CENTER);
           textSize(25);
 
-          text('Scroll to find the entire dimension', width/2,+70-diff);
-          text('10,000 m²', width/2,height-70);
+          text('Scroll to find the entire dimension', width/2,height-70-diff);
           text("It's bigger than Hong Kong", width/2+600+1000+20,+70-diff);
           text('1,000 km²', width/2+600+1000,height-70-diff);
           text("It's bigger than Luxemburg", width/2+600+2500+20,+70-diff);
           text('2,500 km²', width/2+600+2500,height-70-diff);
-          text("It's bigger than Giamaica", width/2+10000+20,+70-diff);
+          text("It's bigger than Jamaica", width/2+10000+20,+70-diff);
           text('10,000 km²', width/2+10000,height-70-diff);
           text("It's bigger than Belgium", width/2+30000+20,+70-diff);
           text('30,000 km²', width/2+30000,height-70-diff);
@@ -275,15 +259,15 @@ function draw() {
           text('300,000 km²', width/2+300000,height-70-diff);
           text("It's bigger than Spain", width/2+500000+20,+70-diff);
           text('500,000 km²', width/2+500000,height-70-diff);
-          text('The entire dimension of the island', width/2+700000+20,+70-diff);
           text('700,000 km²', width/2+700000,height-70-diff);
 
           push();
-          fill(255,255,255,50);
+          fill(255,255,255,255);
           textAlign(CENTER);
           textSize(20);
 
-          text(string,width/2-200,height/2-130, 400, 200);
+          text(string,width/2-200,30, 400, 200);
+          text(string2,width/2-200+700000,30, 400, 200);
           pop();
 
         pop(); // fine - TESTI DIMENSIONI
@@ -294,8 +278,11 @@ function draw() {
         image(back, 0, 0);
         pop(); // FINE - back
 
-        // fill('red');
-        // rect(55,15,70,70);
+        push(); // INIZIO - world
+        translate(width-80,50);
+        scale(0.25);
+        image(world, 0, 0);
+        pop(); // FINE - world
 
     if(spost<=height+diff)
     {
@@ -331,16 +318,25 @@ function mouseClicked() {
     mouseY<=45+70){
     button=true;
   }
+  if(mouseX>=width-45-70 &&
+    mouseX<=width-45 &&
+    mouseY>=45 &&
+    mouseY<=45+70){
+    buttonWorld=true;
+  }
 }
 
 function changeWindow() {
   if (button==true) {
     window.location.href="index.html";
   }
+  if (buttonWorld==true) {
+    window.location.href="world.html";
+  }
 }
 
 // CHEAT
-function keyTyped() {
-  if(key==' ')
-  pos = -700000;
-}
+// function keyTyped() {
+//   if(key==' ')
+//   pos = -700000;
+// }
