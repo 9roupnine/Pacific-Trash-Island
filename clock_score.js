@@ -77,7 +77,7 @@ function showTextEnd() {
     // inserire if
     textSize(40);
     if (round((score/tot)*100)>= 25) {
-      text('Bel lavoro!', 0,-150);
+      text('Well done!', 0,-150);
     }
     if (round((score/tot)*100)<= 25) {
       text('You could have done more...', 0,-150);
