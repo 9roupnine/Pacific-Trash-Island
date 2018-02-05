@@ -1,5 +1,5 @@
 # The Project
-Pacific Trash Island is a project develop at [Politecnico di Milano](http://www.polimi.it) for the course of Creative Coding.
+Pacific Trash Island is a project develop at [Politecnico di Milano](http://www.polimi.it) for the course of Creative Coding 2017/18.
 
 # The Phenomenon
 The Great Pacific garbage patch, also described as the Pacific trash vortex, is a gyre of marine debris particles in the central North Pacific Ocean discovered between 1985 and 1988. Estimates of size range from 700,000 sqkm, about the size Texas, to more than 15,000,000 sqkm, 8% of the size of the Pacific Ocean.
@@ -15,9 +15,11 @@ Methaphorically the island made of plastic and litter is visually translated in 
 The flag points out the fault of human kind in the creation of this repulsive patch.
 
 # The Interaction
-The interaction is based on the position of the mouse that keeps generating letters (plastic trash) and the user’s action typing the same letter appeared on monitor to delete it.
+The interaction is based on the position of the mouse that keeps generating letters (plastic trash) that floats around the canvas (the sea) and the user’s action typing the same letter appeared on monitor to delete it (clean up the ocean).
 
-After one minute of interaction it showed to the user the percentage of plastic cleaned compared to the generated in one minute. Scrolling the mouse it showed the plastic generated with the mouse compared to the entire size of the plastic island.
+After one minute of interaction it showed to the user the percentage of plastic cleaned compared to the generated in one minute. 
+
+Afterwards, it is showed the plastic generated from the mouse compared to the entire size of the plastic island.
 
 ![alt text](https://sailuniverse.com/wp-content/uploads/2016/03/pacific_trash_vortex_info-1.png)
 
