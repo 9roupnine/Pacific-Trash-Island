@@ -7,6 +7,7 @@ The Great Pacific garbage patch, also described as the Pacific trash vortex, is 
 # The Idea
 We wanted to show how big it is and how much time it would take to clean even just a small amount of that trash. 
 We translated the real dates (taken from the [article.](http://www.corriere.it/ambiente/16_gennaio_20/plastica-oceano-peso-maggiore-pesci-2c73cafa-bf71-11e5-953f-faa14dcd94bb.shtml?refresh_ce-cp) ) into our idea of interaction:
+![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/translation.png)
 
 The interaction is based on the position of the mouse that keeps generating letters (plastic trash) and the user’s action typing the same letter appeared on monitor to delete it.
 
