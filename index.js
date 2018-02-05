@@ -67,12 +67,9 @@ function draw() {
       fill(0,27,45,255);
       rect(0, height, width, 7000);
 
-      push(); // inizio onda1
+      push(); // INIZIO onda1
       translate(n1, 0);
       scale(1);
-      // fill(255);
-      // bezier(-100, height/2+50, 200, height/2-50, width-100, height/2-50, width+100, height/2+50);
-      // rect(-100, height/2+50, width+200, height/2+200);
       image(onda1, width/2, height/2+450);
 
       if(n1<-200) {
@@ -86,7 +83,7 @@ function draw() {
       } else if(c1==1){
         n1-=2
       }
-      pop(); // fine onda1
+      pop(); // FINE onda1
 
         push();// INIZIO - isole galleggianti
         translate(0, y);
@@ -116,15 +113,10 @@ function draw() {
         }
         pop(); // FINE - isole galleggianti
 
-        // fill(0,27,45,150);
-        // rect(0, height/2+50, width, height);
 
-        push(); // inizio onda2
+        push(); // INIZIO onda2
         translate(-n1, 0);
         scale(1);
-        // fill(255);
-        // bezier(-100, height/2+50, 200, height/2-50, width-100, height/2-50, width+100, height/2+50);
-        // rect(-100, height/2+50, width+200, height/2+200);
         image(onda2, width/2, height/2+450);
 
         if(n1<-200) {
@@ -138,15 +130,15 @@ function draw() {
         } else if(c1==1){
           n1-=2
         }
-        pop(); // fine onda2
+        pop(); // FINE onda2
 
         push();
         stroke(255);
-        strokeWeight(3);
+        strokeWeight(2);
         fill(255,255,255,colBR);
-        rect(width/2-200, height/2+200, 175, 60, 30, 30, 30, 30);
+        rect(width/2-200, height/2+210, 175, 60, 30, 30, 30, 30);
         fill(255,255,255,colBP);
-        rect(width/2+25, height/2+200, 175, 60, 30, 30, 30, 30);
+        rect(width/2+25, height/2+210, 175, 60, 30, 30, 30, 30);
         pop();
 
         push();
@@ -154,14 +146,14 @@ function draw() {
         fill(255);
         textAlign(CENTER);
         textSize(25);
-        text('In 2050 there will be more bottles than fish.', width/2,height/2+110);
-        text('Better clean up the ocean!', width/2,height/2+150);
+        text('In 2050 there will be more bottles than fish.', width/2,height/2+120);
+        text('Better clean up the ocean!', width/2,height/2+160);
 
         textSize(20);
         fill(colR);
-        text('READ MORE', width/2-112,height/2+237);
+        text('READ MORE', width/2-112,height/2+247);
         fill(colP);
-        text('PLAY', width/2+112,height/2+237);
+        text('PLAY', width/2+112,height/2+247);
         pop();
 
     if(spost<=height && buttonP==true) {

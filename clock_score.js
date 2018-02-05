@@ -60,7 +60,7 @@ function showTextEnd() {
       push();
       fill(255,255,255,colBC);
       stroke(255,255,255,sfumEnd);
-      strokeWeight(3);
+      strokeWeight(2);
       rect(-100, 250, 200, 60, 30, 30, 30, 30);
       pop();
 
@@ -87,7 +87,7 @@ function showTextEnd() {
     else if (colC=='#001b2d') {
       fill(colC);
     }
-    text('CONTINUE', 0,288);
+    text('CONTINUE', 0,287);
     pop();
 
     push();
