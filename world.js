@@ -40,7 +40,7 @@ function draw() {
   if (loading){
     push();
     translate(width/2, height/2);
-    rotate(frameCount*20);
+    rotate(frameCount*10);
     noFill();
     strokeWeight(5);
     stroke(255);
@@ -99,6 +99,7 @@ function deZoom() {
     zoom2 -= 0.03;
   }
 
+  // world
   if (frameCount>=10) {
     push();
     imageMode(CENTER);
@@ -108,6 +109,7 @@ function deZoom() {
     pop();
   }
 
+  // letters
   push();
   translate(width/2,height/2);
   scale(0.8*0.6+zoom2*0.6);
