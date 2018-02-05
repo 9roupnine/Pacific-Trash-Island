@@ -6,8 +6,10 @@ The interaction is based on the position of the mouse that keep generating lette
 
 After one minute of interaction it showed to the user the percentage of plastic cleaned compared to the generated in one minute. Scrolling the mouse it showed the plastic generated with the mouse compared to the entire size of the plastic island.
 
-![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/mood1.png)
-![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/mood2.png)
+![alt text](https://sailuniverse.com/wp-content/uploads/2016/03/pacific_trash_vortex_info-1.png)
+
+
+
 
 ## Ideas / Moodboard
 
@@ -22,6 +24,9 @@ estimates say that the island has an extension that goes from the Iberian Penins
 - How much would you like to clean? (a boy has done some studies on how to clean the plastic island)
 
 - how much time is put in relation with the people who commit themselves
+
+![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/mood2.png)
+![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/mood1.png)
 
 
 
