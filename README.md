@@ -1,8 +1,8 @@
 # Project Idea
 
-We got the idea for the project from some articles about the Pacific Trash Vortex: a massive island of plastic floating in the ocean. We wanted to show how big is it and how much time it would take to clean even just a small amount of that trash. 
+We got the idea for the project from some articles about the Pacific Trash Vortex: a massive island of plastic floating in the ocean. We wanted to show how big it is and how much time it would take to clean even just a small amount of that trash. 
 
-The interaction is based on the position of the mouse that keep generating letters (plastic trash) and the user’s action typing the same letter appeared on monitor to delete it.
+The interaction is based on the position of the mouse that keeps generating letters (plastic trash) and the user’s action typing the same letter appeared on monitor to delete it.
 
 After one minute of interaction it showed to the user the percentage of plastic cleaned compared to the generated in one minute. Scrolling the mouse it showed the plastic generated with the mouse compared to the entire size of the plastic island.
 
