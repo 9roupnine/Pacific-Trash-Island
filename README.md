@@ -11,16 +11,42 @@ After one minute of interaction it showed to the user the percentage of plastic 
 
 # Used Libraries
 
-What things you need to install the software and how to install them
+p5.js
+p5.dom.js
+p5.sound.js
 
 # Problem and Solution
 
 What things you need to install the software and how to install them
 
-### Problem
+### Review with Professoror
 
 ```
-Write Problem
+Lack of middle review with professor about the quality code of the project.
+
+```
+
+```
+Write Solution
+```
+### Floating Object
+
+```
+Correctly simulate floating at submerging objects. 
+
+
+```
+
+```
+Write Solution
+```
+
+### Math
+
+```
+Calculate correct showed data correlated to the right amount of km2 of plastic both produced and cleaned up.
+
+
 ```
 
 ```
