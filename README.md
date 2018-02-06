@@ -3,11 +3,12 @@ Pacific Trash Island is a project develop at [Politecnico di Milano](http://www.
 
 # The Phenomenon
 The Great Pacific garbage patch, also described as the Pacific trash vortex, is a gyre of marine debris particles in the central North Pacific Ocean discovered between 1985 and 1988. Estimates of size range from 700,000 sqkm, about the size of the Iberian Peninsula, to more than 15,000,000 sqkm, the size of the United States and 8% of the size of the Pacific Ocean.
-
+The patch is characterized by exceptionally high relative pelagic concentrations of plastic, chemical sludge, and other debris that have been trapped by the currents of the North Pacific Gyre.
+Last few years many groups and schools are trying to identify methods to safely remove plastic and persistent organic pollutants from the oceans and, beside the work is still far from being done, some have already passed from theory to practice, like Boyan Slat with its foundation Ocean Cleanup Foundation.
 
 
 # The Concept
-The project is born to raise awareness around the enviromental issue of water pollution and how bad are our habits that bring us to create so easly this huge amount of trash every minute. The aim is also to finally make the user think about what he can do to make things better, to commit himself despite the difficulty to avoide creating or to clean even just a small amount of that trash.
+The project is born to raise awareness around the enviromental issue of water pollution and how bad are our habits that bring us to create so easly this huge amount of trash every minute. Finally the aim is also to make the user think about what he can do to make things better, to commit himself despite the difficulty to avoide creating or to clean even just a small amount of that trash.
 
 We translated some real datas (taken from the [article](http://www.corriere.it/ambiente/16_gennaio_20/plastica-oceano-peso-maggiore-pesci-2c73cafa-bf71-11e5-953f-faa14dcd94bb.shtml?refresh_ce-cp) of Corriere della Sera) into our idea of interaction:
 
@@ -39,8 +40,9 @@ estimates say that the island has an extension that goes from the Iberian Penins
 
 
 # The Interaction
-The interaction is based on the position of the mouse that keeps generating letters (plastic trash) that floats around the canvas (the sea). 
-the user’s action typing the same letter appeared on monitor to delete it (clean up the ocean).
+The interaction is based on the position of the mouse that keeps generating letters (plastic trash) that floats around the canvas (the sea). We choose the mouse to produce letters because it represents the user himself, it highlights that our own habits and waste are the cause of this serious problem, not not someone else's.
+
+But hope is not completely gone, and we can still save the environment: the user’s action typing the same letter appeared on monitor, deletes it (cleaning up the ocean).
 
 After one minute of interaction it showed to the user the percentage of plastic cleaned compared to the generated in one minute. 
 
