@@ -2,17 +2,17 @@
 Pacific Trash Island is a project develop at [Politecnico di Milano](http://www.polimi.it) for the course of Creative Coding 2017/18.
 
 # The Phenomenon
-The Great Pacific garbage patch, also described as the Pacific trash vortex, is a gyre of marine debris particles in the central North Pacific Ocean discovered between 1985 and 1988. Estimates of size range from 700,000 sqkm, about the size Texas, to more than 15,000,000 sqkm, 8% of the size of the Pacific Ocean.
+The Great Pacific garbage patch, also described as the Pacific trash vortex, is a gyre of marine debris particles in the central North Pacific Ocean discovered between 1985 and 1988. Estimates of size range from 700,000 sqkm, about the size of the Iberian Peninsula, to more than 15,000,000 sqkm, the size of the United States and 8% of the size of the Pacific Ocean.
+
+
 
 # The Concept
-We wanted to show how big it is and how much time it would take to clean even just a small amount of that trash. 
-We translated the real dates (taken from the [article](http://www.corriere.it/ambiente/16_gennaio_20/plastica-oceano-peso-maggiore-pesci-2c73cafa-bf71-11e5-953f-faa14dcd94bb.shtml?refresh_ce-cp) ) into our idea of interaction:
+The aim of the project is to raise awareness around the enviromental issue of water pollution and how bad are our habits that bring us to create so easly this huge amount of trash every minute, and finally make the user think about what he can do to make things better, to commit himself to avoide creating or to clean even just a small amount of that trash despite the difficulty.
+
+We translated some real datas (taken from the [article](http://www.corriere.it/ambiente/16_gennaio_20/plastica-oceano-peso-maggiore-pesci-2c73cafa-bf71-11e5-953f-faa14dcd94bb.shtml?refresh_ce-cp) ) into our idea of interaction:
 
 ![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/translation.png)
 
-Pacific Trash Island aesthetic and logo recall the idea of the creation of an artificial country.
-Methaphorically the island made of plastic and litter is visually translated in a hill made of alphabet letters.
-The flag points out the fault of human kind in the creation of this repulsive patch.
 
 # The Interaction
 The interaction is based on the position of the mouse that keeps generating letters (plastic trash) that floats around the canvas (the sea) and the user’s action typing the same letter appeared on monitor to delete it (clean up the ocean).
@@ -34,6 +34,10 @@ We took inspiration from the following refereces:
 
 ## Ideas / Moodboard
 
+Pacific Trash Island aesthetic and logo recall the idea of the creation of an artificial country.
+Methaphorically the island made of plastic and litter is visually translated in a hill made of alphabet letters.
+The flag points out the fault of human kind in the creation of this repulsive patch.
+
 - a sort of mixer, in which it is possible to adjust the recycling levels and see how the ocean conditions change in a time scale.
 
 - http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html (space scroll as time scroll)
@@ -41,7 +45,6 @@ We took inspiration from the following refereces:
 - Size ratio compared to geographical areas (some 
 estimates say that the island has an extension that goes from the Iberian Peninsula to the size of the United States)
 - How much would you like to clean? (a boy has done some studies on how to clean the plastic island)
-
 - how much time is put in relation with the people who commit themselves
 
 ![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/mood2.png)
