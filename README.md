@@ -88,8 +88,10 @@ Solution: We preload images of letters so that it didn't have to create an objec
 
 ``
 Problem: Since we are neophyte in programming, the quality of the code is probably not the best. We occurred into several difficulties while developing this project such as: generate different object from the mouse, connect every letter generated with the right key, zoom out very quickly, and so on
-We took benefit from books such as ["The Nature of Code"](http://natureofcode.com/book/) and [tutorials](https://github.com/CodingTrain/Rainbow-Code/tree/master/CodingChallenges) by Daniel Shiffman.
+We took benefit from books and tutorials mostly realized and shared by Daniel Shiffman.
 ``
+* ["The Nature of Code"](http://natureofcode.com/book/)
+* [tutorials](https://github.com/CodingTrain/Rainbow-Code/tree/master/CodingChallenges)
 
 #### Math
 
