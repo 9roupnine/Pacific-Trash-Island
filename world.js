@@ -51,7 +51,7 @@ function draw() {
 
     deZoom();
 
-    if (frameCount>=55 && dh<=((height/2))) {
+    if (round(zoom)<=0 && dh<=((height/2))) {
       dh += height/25;
     }
     push(); // INIZIO - logo
