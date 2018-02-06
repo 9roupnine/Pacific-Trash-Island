@@ -73,14 +73,11 @@ Problem: Lack of middle review with professor about the quality code of the proj
 
 ``
 Problem: Correctly simulate floating object that do not run one over the others and follow some sort of waves and vortex. Object would have also filled the Canvas too quickly.
-
 ``
 
 ``
 Solution: We swiched the first idea of floating object with submerged ones, so that the letters could properly fill the Canvas during the given time and could move randomly on the screen looking fine.
-
 Due to this change we have rethought about the vertical view with an horizontal one. However, in order to allow the user to see the real size ratio comparing the geographical areas of the island with the entire world  
-
 ``
 
 ### Math
