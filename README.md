@@ -91,7 +91,7 @@ Problem: Since we are neophyte in programming, the quality of the code is probab
 We took benefit from books and tutorials mostly realized and shared by Daniel Shiffman.
 ``
 * ["The Nature of Code"](http://natureofcode.com/book/)
-* [tutorials](https://github.com/CodingTrain/Rainbow-Code/tree/master/CodingChallenges)
+* [Rainbow-Code](https://github.com/CodingTrain/Rainbow-Code)
 
 #### Math
 
