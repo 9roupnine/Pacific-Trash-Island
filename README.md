@@ -1,5 +1,6 @@
 # The Project
-Pacific Trash Island is a project develop at [Politecnico di Milano](http://www.polimi.it) for the course of Creative Coding 2017/18.
+Pacific Trash Island is a project develop by Davide Biscuso, Pasquale Morelli and Silvia Pina at [Politecnico di Milano](http://www.polimi.it) for the course of Creative Coding 2017/18 .
+
 
 
 ## The Phenomenon
@@ -9,8 +10,9 @@ The patch is characterized by exceptionally high relative pelagic concentrations
 Last few years many groups and schools are trying to identify methods to safely remove plastic and persistent organic pollutants from the oceans and, beside the work is still far from being done, some have already passed from theory to practice, like Boyan Slat with its foundation Ocean Cleanup Foundation.
 
 
+
 ## The Concept
-The project is born to raise awareness around the enviromental issue of water pollution and how bad are our habits that bring us to create so easly this huge amount of trash every minute. Finally the aim is also to make the user think about what he can do to make things better, to commit himself despite the difficulty to avoide creating or to clean even just a small amount of that trash.
+The idea for the project came from the attempt of raise awareness around the enviromental issue of water pollution and how bad are our habits that bring us to create so easly this huge amount of trash every minute. Finally the aim is also to make the user think about what he can do to make things better, to commit himself despite the difficulty to avoide creating or to clean even just a small amount of that trash, to adjust the recycling levels and see how the ocean conditions change in a time scale.
 
 We translated some real datas (taken from the [article](http://www.corriere.it/ambiente/16_gennaio_20/plastica-oceano-peso-maggiore-pesci-2c73cafa-bf71-11e5-953f-faa14dcd94bb.shtml?refresh_ce-cp) of Corriere della Sera) into our idea of interaction:
 
@@ -29,19 +31,10 @@ We took visual inspiration from [Mandy Barker](http://mandy-barker.com/) works, 
 
 ![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/mood1.png)
 
-- a sort of mixer, in which it is possible to adjust the recycling levels and see how the ocean conditions change in a time scale.
-
-- http://joshworth.com/dev/pixelspace/pixelspace_solarsystem.html (space scroll as time scroll)
-
-- Size ratio compared to geographical areas (some 
-estimates say that the island has an extension that goes from the Iberian Peninsula to the size of the United States)
-- How much would you like to clean? (a boy has done some studies on how to clean the plastic island)
-- how much time is put in relation with the people who commit themselves
-
-
 
 
 # The Interaction
+
 The interaction is based on the position of the mouse that keeps generating letters (plastic trash) that floats around the canvas (the sea). We choose the mouse to produce letters because it represents the user himself, it highlights that our own habits and waste are the cause of this serious problem, not not someone else's.
 
 But hope is not completely gone, and we can still save the environment: the user’s action typing the same letter appeared on monitor, deletes it (cleaning up the ocean).
@@ -56,6 +49,8 @@ We took inspiration from the following refereces:
 * [floating illuminates by aadebded](https://www.openprocessing.org/sketch/381214)
 * [Radio Garden](http://radio.garden/live/)
 
+
+
 ## Used Libraries
 
 p5.js
@@ -64,9 +59,9 @@ p5.dom.js
 
 p5.sound.js
 
-## Problem and Solution
 
-What things you need to install the software and how to install them
+
+## Problem and Solution
 
 ### Review with Professoror
 
@@ -75,19 +70,19 @@ Problem: Lack of middle review with professor about the quality code of the proj
 
 ```
 
-```
-Solution:
-```
 ### Floating Object
 
 ```
-Problem: Correctly simulate floating at submerging objects. 
+Problem: Correctly simulate floating object that do not run one over the others and follow some sort of waves and vortex. Object would have also filled the Canvas too quickly.
 
 
 ```
 
 ```
-Solution:
+Solution: We swiched the first idea of floating object with submerged ones, so that the letters could properly fill the Canvas during the given time and could move randomly on the screen looking fine.
+
+Due to this change we have rethought about the vertical view with an horizontal one. However, in order to allow the user to see the real size ratio comparing the geographical areas of the island with the entire world  
+
 ```
 
 ### Math
