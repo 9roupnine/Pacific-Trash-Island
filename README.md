@@ -7,36 +7,24 @@ The Great Pacific garbage patch, also described as the Pacific trash vortex, is 
 
 
 # The Concept
-The aim of the project is to raise awareness around the enviromental issue of water pollution and how bad are our habits that bring us to create so easly this huge amount of trash every minute, and finally make the user think about what he can do to make things better, to commit himself to avoide creating or to clean even just a small amount of that trash despite the difficulty.
+The project is born to raise awareness around the enviromental issue of water pollution and how bad are our habits that bring us to create so easly this huge amount of trash every minute. The aim is also to finally make the user think about what he can do to make things better, to commit himself despite the difficulty to avoide creating or to clean even just a small amount of that trash.
 
-We translated some real datas (taken from the [article](http://www.corriere.it/ambiente/16_gennaio_20/plastica-oceano-peso-maggiore-pesci-2c73cafa-bf71-11e5-953f-faa14dcd94bb.shtml?refresh_ce-cp) ) into our idea of interaction:
+We translated some real datas (taken from the [article](http://www.corriere.it/ambiente/16_gennaio_20/plastica-oceano-peso-maggiore-pesci-2c73cafa-bf71-11e5-953f-faa14dcd94bb.shtml?refresh_ce-cp) of Corriere della Sera) into our idea of interaction:
 
 ![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/translation.png)
 
 
-# The Interaction
-The interaction is based on the position of the mouse that keeps generating letters (plastic trash) that floats around the canvas (the sea) and the user’s action typing the same letter appeared on monitor to delete it (clean up the ocean).
 
-After one minute of interaction it showed to the user the percentage of plastic cleaned compared to the generated in one minute. 
-
-Afterwards, it is showed the plastic generated from the mouse compared to the entire size of the plastic island.
-
-We took inspiration from the following refereces:
-* [letter world by nishiwaki akiho](https://www.openprocessing.org/sketch/79781)
-* [Wandering Title by Michael Stathopoulos](https://www.openprocessing.org/sketch/104881)
-* [floating illuminates by aadebded](https://www.openprocessing.org/sketch/381214)
-* [Radio Garden](http://radio.garden/live/)
-
-
-
-
-
-
-## Ideas / Moodboard
+## The Visual
 
 Pacific Trash Island aesthetic and logo recall the idea of the creation of an artificial country.
-Methaphorically the island made of plastic and litter is visually translated in a hill made of alphabet letters.
-The flag points out the fault of human kind in the creation of this repulsive patch.
+Methaphorically the island made of plastic and litter is visually translated in a hill made of alphabet letters and with the flag point out the fault of human kind in the creation of this repulsive patch.
+
+![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/mood2.png)
+
+We took visual inspiration from [Mandy Barker] (http://mandy-barker.com/) works, an international award winning photographer whose work involving marine plastic debris.
+
+![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/mood1.png)
 
 - a sort of mixer, in which it is possible to adjust the recycling levels and see how the ocean conditions change in a time scale.
 
@@ -47,10 +35,22 @@ estimates say that the island has an extension that goes from the Iberian Penins
 - How much would you like to clean? (a boy has done some studies on how to clean the plastic island)
 - how much time is put in relation with the people who commit themselves
 
-![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/mood2.png)
-![alt text](https://9roupnine.github.io/PacificTrashIsland/assets/mood1.png)
 
 
+
+# The Interaction
+The interaction is based on the position of the mouse that keeps generating letters (plastic trash) that floats around the canvas (the sea). 
+the user’s action typing the same letter appeared on monitor to delete it (clean up the ocean).
+
+After one minute of interaction it showed to the user the percentage of plastic cleaned compared to the generated in one minute. 
+
+Afterwards, it is showed the plastic generated from the mouse compared to the entire size of the plastic island.
+
+We took inspiration from the following refereces:
+* [letter world by nishiwaki akiho](https://www.openprocessing.org/sketch/79781)
+* [Wandering Title by Michael Stathopoulos](https://www.openprocessing.org/sketch/104881)
+* [floating illuminates by aadebded](https://www.openprocessing.org/sketch/381214)
+* [Radio Garden](http://radio.garden/live/)
 
 # Used Libraries
 
