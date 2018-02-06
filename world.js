@@ -5,8 +5,9 @@ var sensativity = 0.0001;
 var sfum = 255,
     zoom = 8,
     zoom2 = 0,
-    dh=0; //max: (height/2)+15
-    sec=1;
+    dh=0, //max: (height/2)+15
+    sec=1,
+    frameTime = 0;
 var button = false,
     buttonIsland = false;
 var loading = true;
@@ -40,7 +41,7 @@ function draw() {
   if (loading){
     push();
     translate(width/2, height/2);
-    rotate(frameCount*10);
+    rotate(frameCount*5);
     noFill();
     strokeWeight(5);
     stroke(255);
@@ -75,6 +76,8 @@ function draw() {
 
     changeWindow();
 
+    frameTime++;
+
     // push(); //inizio SFUMATURA
     // rectMode(CORNER);
     // fill(0,27,45,mySfum);
@@ -90,17 +93,17 @@ function mouseWheel() {
 }
 
 function deZoom() {
-  if (frameCount>=10 && frameCount<20) {
+  if (frameTime>=10 && frameTime<20) {
     zoom2 -= 0.02;
     zoom -= 0.2
   }
-  if (frameCount>=20 && frameCount<40) {
+  if (frameTime>=20 && frameTime<40) {
     zoom -= 0.3;
     zoom2 -= 0.03;
   }
 
   // world
-  if (frameCount>=10) {
+  if (frameTime>=10) {
     push();
     imageMode(CENTER);
     translate(width/2,height/2);
