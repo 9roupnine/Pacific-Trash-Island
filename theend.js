@@ -331,7 +331,17 @@ function changeWindow() {
 }
 
 // CHEAT
-// function keyTyped() {
-//   if(key==' ')
-//   pos = -700000;
-// }
+function keyTyped() {
+  if(key=='È')
+  pos = -700000;
+  if(key=='¯')
+  pos = -500000;
+  if(key=='Œ')
+  pos = -300000;
+  if(key=='È')
+  pos = -700000;
+  if(key=='¯')
+  pos = -500000;
+  if(key=='Ù')
+  pos = -170000;
+}
