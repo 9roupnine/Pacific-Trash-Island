@@ -7,7 +7,7 @@ Pacific Trash Island is a project develop by Davide Biscuso, Pasquale Morelli an
 The Great Pacific garbage patch, also described as the Pacific trash vortex, is a gyre of marine debris particles in the central North Pacific Ocean discovered between 1985 and 1988. Estimates of size range from 700,000 sqkm, about the size of the Iberian Peninsula, to more than 15,000,000 sqkm, the size of the United States and 8% of the size of the Pacific Ocean.
 The patch is characterized by exceptionally high relative pelagic concentrations of plastic, chemical sludge, and other debris that have been trapped by the currents of the North Pacific Gyre.
 
-in recent years many groups and schools are trying to identify methods to safely remove plastic and persistent organic pollutants from the oceans and, beside the work is still far from being done, some have already passed from theory to practice, like Boyan Slat with its foundation Ocean Cleanup Foundation.
+In recent years many groups and schools are trying to identify methods to safely remove plastic and persistent organic pollutants from the oceans and, beside the work is still far from being done, some have already passed from theory to practice, like Boyan Slat with its foundation Ocean Cleanup Foundation.
 
 
 
